@@ -1,0 +1,55 @@
+---
+import Section from "../components/common/Section.astro";
+import SuperchargeFeature from "./common/SuperchargeFeature.astro";
+
+import iconBlackList from "../assests/icon-blacklist.svg";
+import iconText from "../assests/icon-text.svg";
+import iconPreview from "../assests/icon-preview.svg";
+---
+
+<div class="supercharge-section">
+  <Section
+    title="Supercharge your workflow"
+    description="We’ve got the tools to boost your productivity."
+  >
+    <div class="supercharge-features">
+      <SuperchargeFeature
+        image={iconBlackList}
+        title="Create blacklists"
+        description="Ensure sensitive information never makes its way to your clipboard by excluding certain sources."
+      />
+
+      <SuperchargeFeature
+        image={iconText}
+        title="Plain text snippets"
+        description="Remove unwanted formatting from copied text for a consistent look."
+      />
+
+      <SuperchargeFeature
+        image={iconPreview}
+        title="Sneak preview"
+        description="Quick preview of all snippets on your Clipboard for easy access."
+      />
+    </div>
+  </Section>
+</div>
+
+<style>
+  .supercharge-section {
+    margin-top: 136px;
+  }
+
+  .supercharge-features {
+    margin-top: 92px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media (width >= 1024px) {
+      margin-top: 78px;
+      flex-direction: row;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+</style>

@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+
+import Patterns from "../components/Patterns.astro";
+import SnippetsSection from "../components/SnippetsSection.astro";
+import ClipboardSection from "../components/ClipboardSection.astro";
+import SuperchargeSection from "../components/SuperchargeSection.astro";
+---
+
+<Layout title="Frontend Mentor | Clipboard landing page">
+  <Header />
+  <main class="main-container">
+    <Hero
+      title="A history of everything you copy"
+      description="Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices."
+    />
+
+    <SnippetsSection />
+
+    <ClipboardSection />
+
+    <SuperchargeSection />
+
+    <Patterns />
+
+    <div class="hero-bottom">
+      <Hero
+        title="Clipboard for iOS and Mac OS"
+        description="Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard."
+      />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .main-container {
+    padding: 0 32px;
+    min-height: 100vh;
+  }
+
+  .hero-bottom {
+    margin-top: 174px;
+  }
+</style>

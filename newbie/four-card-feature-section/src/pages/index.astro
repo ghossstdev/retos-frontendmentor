@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import IconSupervisor from "../assests/icon-supervisor.svg";
+import IconTeamBuilder from "../assests/icon-team-builder.svg";
+import IconKarma from "../assests/icon-karma.svg";
+import IconCalculator from "../assests/icon-calculator.svg";
+---
+
+<Layout title="Four card feature section">
+  <main class="bg-VeryLightGray p-8 min-h-screen lg:p-[84px]">
+    <h1
+      class="text-xl text-GrayishBlue font-extralight text-center mb-[11px] lg:text-4xl lg:mb-9"
+    >
+      Reliable, efficient delivery <br />
+      <span class="text-VeryDarkBlue font-semibold">Powered by Technology</span>
+    </h1>
+
+    <p
+      class="text-center text-GrayishBlue font-extralight mb-[31px] lg:max-w-[508px] lg:mx-auto"
+    >
+      Our Artificial Intelligence powered tools use millions of project data
+      points to ensure that your project is successful
+    </p>
+
+    <div
+      class="flex flex-col gap-6 lg:grid lg:grid-cols-layout lg:justify-center lg:gap-[30px]"
+    >
+      <Card
+        title="Supervisor"
+        description="Monitors activity to identify project roadblocks"
+        borderColor="border-Cyan"
+        icon={IconSupervisor}
+        gridAling="self-center"
+      />
+
+      <div class="flex flex-col gap-6 lg:gap-[30px] items-center">
+        <Card
+          title="Team Builder"
+          description="Scans our talent network to create the optimal team for your project"
+          borderColor="border-Red"
+          icon={IconTeamBuilder}
+        />
+
+        <Card
+          title="Karma"
+          description="Regularly evaluates our talent to ensure quality"
+          borderColor="border-Orange"
+          icon={IconKarma}
+        />
+      </div>
+
+      <Card
+        title="Calculator"
+        description="Uses data from past projects to provide better delivery estimates"
+        borderColor="border-Blue"
+        icon={IconCalculator}
+        gridAling="self-center"
+      />
+    </div>
+  </main>
+</Layout>

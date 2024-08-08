@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-HankenGrotesk">
+    <main class="min-h-screen xl:flex xl:items-center xl:justify-center">
+      <article
+        class="bg-White w-[375px] mx-auto xl:flex xl:w-auto shadow-md xl:rounded-3xl"
+      >
+        <div
+          class="w-[375px] h-[355px] gradientBackground rounded-b-[26px] text-center pt-7 px-[54px] xl:w-[366px] xl:h-[514px] xl:rounded-3xl xl:pt-11"
+        >
+          <h2 class="text-LightLavender text-lg xl:text-2xl">Your Result</h2>
+          <div
+            class="w-[142px] h-[142px] rounded-full gradientCircle flex flex-col items-center justify-center mx-auto mt-[30px] xl:mt-[38px] xl:w-[201px] xl:h-[201px]"
+          >
+            <p class="text-White text-[54px] font-extrabold xl:text-[68px]">
+              76
+            </p>
+            <span class="text-LightLavender xl:text-lg">of 100</span>
+          </div>
+          <h1 class="text-White text-2xl mt-6 xl:mt-10 xl:text-3xl">Great</h1>
+          <p class="text-[15px] text-LightLavender mt-2 xl:mt-4 xl:text-lg">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="w-[375px] bg-White py-7 px-[30px]">
+          <h2 class="mb-6 font-bold text-lg xl:text-2xl">Summary</h2>
+          <div class="flex flex-col gap-5 text-DarkGrayBlue">
+            <div
+              class="bg-LightRedAlpha w-[314px] h-[56px] rounded-xl flex justify-between px-5 items-center"
+            >
+              <div class="flex gap-4">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt="Icon Reaction"
+                />
+                <span class="text-LightRed font-bold xl:text-lg">Reaction</span>
+              </div>
+
+              <p class="text-LightLavender xl:text-lg">
+                <span class="font-bold text-DarkGrayBlue">80</span> / 100
+              </p>
+            </div>
+
+            <div
+              class="bg-OrangeYellowAlpha w-[314px] h-[56px] rounded-xl flex justify-between px-5 items-center"
+            >
+              <div class="flex gap-4">
+                <img src="./assets/images/icon-memory.svg" alt="Icon Memory" />
+                <span class="text-OrangeYellow font-bold xl:text-lg"
+                  >Memory</span
+                >
+              </div>
+
+              <p class="text-LightLavender xl:text-lg">
+                <span class="font-bold text-DarkGrayBlue">92</span> / 100
+              </p>
+            </div>
+
+            <div
+              class="bg-GreenTealAlpha w-[314px] h-[56px] rounded-xl flex justify-between px-5 items-center"
+            >
+              <div class="flex gap-4">
+                <img src="./assets/images/icon-verbal.svg" alt="Icon Verbal" />
+                <span class="text-GreenTeal font-bold xl:text-lg">Verbal</span>
+              </div>
+
+              <p class="text-LightLavender xl:text-lg">
+                <span class="font-bold text-DarkGrayBlue">61</span> / 100
+              </p>
+            </div>
+
+            <div
+              class="bg-CobaltBlueAlpha w-[314px] h-[56px] rounded-xl flex justify-between px-5 items-center"
+            >
+              <div class="flex gap-4">
+                <img src="./assets/images/icon-visual.svg" alt="Icon Visual" />
+                <span class="text-CobaltBlue font-bold xl:text-lg">Visual</span>
+              </div>
+
+              <p class="text-LightLavender xl:text-lg">
+                <span class="font-bold text-DarkGrayBlue">72</span> / 100
+              </p>
+            </div>
+          </div>
+          <button
+            class="bg-DarkGrayBlue text-white text-lg mt-6 w-[318px] h-[58px] rounded-full cursor-pointer hover:gradientBackground hover:bg-gradient-to-b from-LightSlateBlueBackground to-LightRoyalBlueBackground"
+          >
+            Continue
+          </button>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

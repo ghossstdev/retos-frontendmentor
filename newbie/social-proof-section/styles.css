@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: .9375rem;
+}
+
+.main-container {
+    padding: 80px 1.5rem;
+    min-height: 100vh;
+    background: url('./images/bg-pattern-top-mobile.svg') no-repeat, url('./images/bg-pattern-bottom-mobile.svg') no-repeat bottom;
+
+    @media (width >=1024px) {
+        background: url('./images/bg-pattern-top-desktop.svg') no-repeat, url('./images/bg-pattern-bottom-desktop.svg') no-repeat bottom;
+        padding: 115px 165px;
+    }
+}
+
+.introductory-container {
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media (width >=1024px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 76px;
+    }
+}
+
+.header {
+    margin-bottom: 45px;
+
+    @media (width >=1024px) {
+        text-align: left;
+        max-width: 450px;
+        margin-bottom: unset;
+
+    }
+}
+
+.header__title {
+    font-size: 2.125rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: 24px;
+
+    @media (width >=1024px) {
+        font-size: 3.5rem;
+        line-height: 56px;
+    }
+}
+
+.header__description {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--Dark-Grayish-Magenta);
+
+    @media (width >=1024px) {
+        font-size: 1.1875rem;
+    }
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    @media (width >=1024px) {
+        justify-content: center;
+        width: 550px;
+    }
+}
+
+.rating {
+    width: 324px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 8px;
+
+    @media (width >=1024px) {
+        width: 446px;
+        height: 55px;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+    }
+}
+
+
+
+.rating__starts {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 14px;
+
+    @media (width >=1024px) {
+        margin-bottom: unset;
+    }
+
+}
+
+.rating__title {
+    font-size: 1.0625rem;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    @media (width >=1024px) {
+        flex-direction: unset;
+        gap: 30px;
+        height: 268px;
+        align-items: unset;
+    }
+}
+
+.testimonial {
+    width: 330px;
+    height: 248px;
+    padding: 40px 30px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 8px;
+
+    @media (width >=1024px) {
+        width: 354px;
+        height: 232px;
+        padding: 32px 42px;
+    }
+
+    & header {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        margin-bottom: 30px;
+
+        @media (width >=1024px) {
+            margin-bottom: 26px;
+        }
+
+        & img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.testimonial__name {
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.testimonial__role {
+    font-size: 1rem;
+    color: var(--Soft-Pink);
+    font-weight: 400;
+}
+
+.testimonial__description {
+    color: var(--White);
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+
+    @media (width >=1024px) {
+        font-size: 15px;
+    }
+}
+
+@media (width >=1024px) {
+    .rating--2 {
+        margin-left: 46px;
+    }
+
+    .rating--3 {
+        margin-left: 94px;
+    }
+
+    .testimonial--2 {
+        align-self: center;
+    }
+
+    .testimonial--3 {
+        align-self: end;
+    }
+
+}

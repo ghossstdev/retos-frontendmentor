@@ -1,0 +1,14 @@
+# Ignorar archivos de compilación
+dist/
+build/
+node_modules/
+*.log
+.vscode/
+
+# Ignorar archivos de configuración
+.env
+*.env
+pnpm-lock.yaml
+
+# Ignorar archivos temporales
+*.tmp

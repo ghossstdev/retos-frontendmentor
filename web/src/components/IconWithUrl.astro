@@ -1,0 +1,14 @@
+---
+interface Props {
+    url: string
+    name: string
+}
+
+const { url, name } = Astro.props
+---
+
+<img
+    class="w-5 h-5"
+    src={url} 
+    alt={`Icon ${name}`}
+>

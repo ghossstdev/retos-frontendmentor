@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="section-apparel">
+        <header class="section-apparel__header">
+          <img
+            class="section-apparel__logo"
+            src="./images/logo.svg"
+            alt="Logo"
+          />
+        </header>
+        <div class="section-apparel__hero"></div>
+        <div class="section-apparel__details">
+          <h1 class="section-apparel__title">
+            <span class="section-apparel__were">We're</span>
+            coming soon
+          </h1>
+          <p class="section-apparel__description">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+
+          <div class="email" id="container-email">
+            <input
+              class="email__input"
+              type="email"
+              id="input-email"
+              placeholder="Email Address"
+              required
+            />
+
+            <button id="button-email" class="email__button">
+              <img
+                class="email__arrow"
+                src="./images/icon-arrow.svg"
+                alt="Icon Arrow"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradientBackground {
+    @apply bg-gradient-to-b from-LightSlateBlueBackground to-LightRoyalBlueBackground
+}
+
+.gradientCircle {
+    @apply bg-gradient-to-b from-VioletBlueCircle to-PersianBlueCircle
+}

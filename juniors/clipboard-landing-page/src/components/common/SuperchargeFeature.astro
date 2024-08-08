@@ -1,0 +1,41 @@
+---
+interface Props {
+  image: ImageMetadata;
+  title: string;
+  description: string;
+}
+
+const { image, title, description } = Astro.props;
+---
+
+<article>
+  <img src={image.src} alt="Image Feature" />
+
+  <div>
+    <h2 class="titles">{title}</h2>
+    <p class="descriptions">{description}</p>
+  </div>
+</article>
+
+<style>
+  div {
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin: 0 auto 46px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    margin-top: 22px;
+    font-size: 15px;
+    line-height: 26px;
+    max-width: 290px;
+
+    @media (width >= 1024px) {
+      font-size: 13px;
+    }
+  }
+</style>

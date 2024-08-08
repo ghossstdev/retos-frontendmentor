@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Project A",
+        "image": "/me.webp",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "demoUrl": "/",
+        "codeUrl": "/",
+        "icons": [
+            {
+                "name": "Tailwindcss",
+                "url": "/icons/tailwind.svg"
+            },
+            {
+                "name": "Astro",
+                "url": "/icons/astro.svg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main-container {
+    min-width: 375px;
+    height: 100vh;
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 330px;
+    height: 378px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__background {
+    height: 140px;
+    background-image: url('./images/bg-pattern-card.svg');
+}
+
+.card__user {
+    background-color: white;
+    height: 236px;
+    position: relative;
+}
+
+.card__details {
+    padding-top: 4.5rem;
+    text-align: center;
+}
+
+.card__profile {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card__name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.card__age {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    margin-left: 0.3rem;
+}
+
+.card__city {
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 25px;
+}
+
+.stats-container {
+    border-top: 1px solid var(--Dark-grayish-blue);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+
+.stats {
+
+    & span {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+    & p {
+        margin-top: 5px;
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: var(--Dark-grayish-blue);
+    }
+}
+
+@media (width >=1440px) {
+
+    .main-container {
+        width: 100%;
+    }
+
+    .card {
+        width: 350px;
+    }
+}

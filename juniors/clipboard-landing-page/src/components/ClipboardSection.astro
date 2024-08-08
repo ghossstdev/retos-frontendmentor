@@ -1,0 +1,32 @@
+---
+import Section from "../components/common/Section.astro";
+import imageDevices from "../assests/image-devices.png";
+---
+
+<div class="clipboard-section">
+  <Section
+    title="Access Clipboard anywhere"
+    description="Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks."
+  >
+    <img class="image-devices" src={imageDevices.src} alt="Image Devices" />
+  </Section>
+</div>
+
+<style>
+  .clipboard-section {
+    margin-top: 196px;
+  }
+
+  .image-devices {
+    width: 320px;
+    height: 188px;
+    margin-top: 70px;
+
+    @media (width >= 1024px) {
+      width: 810px;
+      height: 468px;
+      margin: 115px auto;
+      display: block;
+    }
+  }
+</style>

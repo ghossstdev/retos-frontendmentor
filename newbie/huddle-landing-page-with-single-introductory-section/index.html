@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./output.css" />
+    <!-- BoxIcons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+  </head>
+  <body>
+    <main
+      class="bg-Violet w-full min-h-screen relative px-[38px] z-10 bg-mobileBackground bg-no-repeat bg-contain bg-top lg:bg-desktopBackground lg:px-20"
+    >
+      <header class="pt-9">
+        <img
+          class="w-[125px] h-[25px] ml-[-15px] lg:w-[200px] lg:h-[40px]"
+          src="./images/logo.svg"
+          alt="Logo"
+        />
+      </header>
+      <div class="lg:flex lg:pt-[100px] lg:gap-14">
+        <div class="mt-[68px] lg:mt-0 flex-2">
+          <img
+            class="lg:w-[700px]"
+            src="./images/illustration-mockups.svg"
+            alt="Mockups"
+          />
+        </div>
+
+        <section
+          class="text-center lg:text-left mt-[65px] lg:mt-[50px] flex-1 lg:max-w-[500px]"
+        >
+          <h1
+            class="text-white font-semibold font-Poppins text-2xl lg:text-[40px] leading-[42px]"
+          >
+            Build The Community Your Fans Will Love
+          </h1>
+          <p class="mt-[30px] text-white font-OpenSans text-base lg:text-base">
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button
+            class="mt-[26px] w-[240px] h-[40px] lg:h-[56px] bg-white rounded-full text-Violet font-Poppins shadow-xl mb-5 text-sm hover:bg-SoftMagenta hover:text-white transition-colors lg:w-[200px]"
+          >
+            Register
+          </button>
+        </section>
+      </div>
+      <footer class="flex justify-center gap-3 pb-10 lg:justify-end">
+        <span
+          href="#"
+          class="w-7 h-7 lg:w-[42px] lg:h-[40px] rounded-full border border-white flex items-center justify-center font-bold text-white hover:text-SoftMagenta hover:border-SoftMagenta transition-colors"
+        >
+          <i class="bx bxl-facebook"></i>
+        </span>
+
+        <span
+          href="#"
+          class="w-7 h-7 lg:w-[42px] lg:h-[40px] rounded-full border border-white flex items-center justify-center font-bold text-white hover:text-SoftMagenta hover:border-SoftMagenta transition-colors"
+        >
+          <i class="bx bxl-twitter"></i>
+        </span>
+
+        <span
+          href="#"
+          class="w-7 h-7 lg:w-[42px] lg:h-[40px] rounded-full border border-white flex items-center justify-center font-bold text-white hover:text-SoftMagenta hover:border-SoftMagenta transition-colors"
+        >
+          <i class="bx bxl-instagram"></i>
+        </span>
+      </footer>
+    </main>
+  </body>
+</html>

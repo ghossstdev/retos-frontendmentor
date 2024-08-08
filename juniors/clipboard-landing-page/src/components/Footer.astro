@@ -1,0 +1,106 @@
+---
+import logo from "../assests/logo.svg";
+---
+
+<footer>
+  <div>
+    <img src={logo.src} alt="Logo Footer" />
+  </div>
+
+  <ul>
+    <li>
+      <a href="#">FAQs</a>
+    </li>
+    <li>
+      <a href="#">Contact Us</a>
+    </li>
+    <li>
+      <a href="#">Privacy Policy</a>
+    </li>
+    <li>
+      <a href="#">Press Kit</a>
+    </li>
+    <li>
+      <a href="#">Install Guide</a>
+    </li>
+  </ul>
+
+  <div>
+    <i class="bx bxl-facebook-square footer-icon"></i>
+    <i class="bx bxl-twitter footer-icon"></i>
+    <i class="bx bxl-instagram footer-icon"></i>
+  </div>
+</footer>
+
+<style>
+  footer {
+    margin-top: 168px;
+    padding: 50px 0;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    text-align: center;
+
+    & div:last-child {
+      display: flex;
+      align-items: center;
+      gap: 39px;
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 37px;
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        gap: 37px;
+
+        @media (width >= 1024px) {
+          align-items: start;
+          gap: 25px;
+        }
+      }
+
+      & a {
+        color: var(--Dark-Grayish-Blue);
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      & a:hover {
+        color: var(--Strong-Cyan);
+      }
+
+      @media (width >= 1024px) {
+        display: grid;
+        height: 100%;
+        place-content: center;
+        grid-template-columns: repeat(3, 132px);
+      }
+    }
+
+    @media (width >= 1024px) {
+      height: 150px;
+      margin-top: 148px;
+      padding: 0 65px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .footer-icon {
+    display: block;
+    color: #4c545c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 26px;
+
+    &:hover {
+      color: var(--Strong-Cyan);
+    }
+  }
+</style>

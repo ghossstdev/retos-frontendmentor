@@ -1,0 +1,68 @@
+---
+import IconWithUrl from "./IconWithUrl.astro";
+
+interface Props {
+	project: {
+		title: string;
+		image: string;
+		description: string;
+		demoUrl: string;
+		codeUrl: string;
+		icons: {
+			name: string;
+			url: string;
+		}[];
+	};
+}
+
+const { project } = Astro.props;
+
+const { title, image, description, demoUrl, codeUrl, icons } = project;
+---
+
+<article class='rounded-lg border bg-card text-card-foreground shadow-sm'>
+	<img
+		src={image}
+		width='400'
+		height='225'
+		alt={title}
+		class='rounded-t-lg object-cover w-full aspect-[16/9]'
+	/>
+	<div class='p-4 space-y-2'>
+		<div class='flex items-center justify-between'>
+			<h3
+				class='whitespace-nowrap text-2xl font-semibold leading-none tracking-tight'
+			>
+				{title}
+			</h3>
+			<div
+				class='flex gap-2 w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground/80 text-xs'
+			>
+				{
+					icons.map((icon) => (
+						<IconWithUrl name={icon.name} url={icon.url} />
+					))
+				}
+			</div>
+		</div>
+		<p class='text-sm text-muted-foreground'>
+			{description}
+		</p>
+		<div class='flex gap-2'>
+			<a
+				href={demoUrl}
+				target='_blank'
+				class='flex-1 inline-flex items-center justify-center h-9 rounded-md bg-primary text-primary-foreground text-sm font-medium shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50'
+			>
+				Ver Demo
+			</a>
+			<a
+				href={codeUrl}
+				target='_blank'
+				class='flex-1 inline-flex items-center justify-center h-9 rounded-md border border-input bg-background text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50'
+			>
+				Ver Codigo
+			</a>
+		</div>
+	</div>
+</article>

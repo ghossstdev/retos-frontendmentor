@@ -1,0 +1,30 @@
+---
+import logoGoogle from "../assests/logo-google.png";
+import logoIBM from "../assests/logo-ibm.png";
+import logoMicrosoft from "../assests/logo-microsoft.png";
+import logoHp from "../assests/logo-hp.png";
+import logoVector from "../assests/logo-vector-graphics.png";
+---
+
+<section>
+  <img src={logoGoogle.src} alt="Logo Google" />
+  <img src={logoIBM.src} alt="Logo IBM" />
+  <img src={logoMicrosoft.src} alt="Logo Microsoft" />
+  <img src={logoHp.src} alt="Logo HP" />
+  <img src={logoVector.src} alt="Logo Vector" />
+</section>
+
+<style>
+  section {
+    margin-top: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+
+    @media (width >= 1024px) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+</style>

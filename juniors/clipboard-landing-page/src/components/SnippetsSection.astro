@@ -1,0 +1,79 @@
+---
+import imageComputer from "../assests/image-computer.png";
+import Section from "../components/common/Section.astro";
+import SnippetFeature from "./common/SnippetFeature.astro";
+---
+
+<div class="snippets-section">
+  <Section
+    title="Keep track of your snippets"
+    description="Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything."
+  >
+    <div class="snippets-container">
+      <img
+        class="image-computer"
+        src={imageComputer.src}
+        alt="Image Computer"
+      />
+
+      <div class="snippets-features">
+        <SnippetFeature
+          title="Quick Search"
+          description="Easily search your snippets by content, category, web address, application, and more."
+        />
+
+        <SnippetFeature
+          title="iCloud Sync"
+          description="Instantly saves and syncs snippets across all your devices."
+        />
+
+        <SnippetFeature
+          title="Complete History"
+          description="Retrieve any snippets from the first moment you started using the app."
+        />
+      </div>
+    </div>
+  </Section>
+</div>
+
+<style>
+  .snippets-section {
+    margin-top: 170px;
+
+    @media (width >= 1024px) {
+      margin-top: 160px;
+    }
+  }
+
+  .snippets-container {
+    @media (width >= 1024px) {
+      display: flex;
+    }
+  }
+
+  .image-computer {
+    width: 316px;
+    height: 240px;
+    margin-top: 67px;
+
+    @media (width >= 1024px) {
+      width: unset;
+      height: 570px;
+      position: relative;
+      left: -70px;
+      margin-top: 82px;
+    }
+  }
+
+  .snippets-features {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+
+    @media (width >= 1024px) {
+      margin-top: 160px;
+      gap: 68px;
+    }
+  }
+</style>

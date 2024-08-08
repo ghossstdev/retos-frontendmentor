@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="fylo">
+        <header class="fylo__header">
+          <img class="fylo__logo" src="./images/logo.svg" alt="Logo" />
+        </header>
+
+        <div class="fylo__options">
+          <div class="fylo__option">
+            <img
+              class="fylo__option-icon"
+              src="./images/icon-document.svg"
+              alt="Icon Document"
+            />
+          </div>
+
+          <div class="fylo__option">
+            <img
+              class="fylo__option-icon"
+              src="./images/icon-folder.svg"
+              alt="Icon Folder"
+            />
+          </div>
+
+          <div class="fylo__option">
+            <img
+              class="fylo__option-icon"
+              src="./images/icon-upload.svg"
+              alt="Icon Upload"
+            />
+          </div>
+        </div>
+      </div>
+
+      <section class="details">
+        <h1 class="details__title">
+          You’ve used <span>815 GB</span> of your storage
+        </h1>
+
+        <div class="details__input-field">
+          <div class="details__range">
+            <span class="details__range-thumb"></span>
+          </div>
+        </div>
+
+        <div class="details__remainder">
+          <p class="details__remainder-gb">185</p>
+          <p class="details__remainder-title">GB Left</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

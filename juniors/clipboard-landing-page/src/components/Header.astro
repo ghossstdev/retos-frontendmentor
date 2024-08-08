@@ -1,0 +1,25 @@
+---
+import logo from "../assests/logo.svg";
+---
+
+<header>
+  <img src={logo.src} alt="Logo Clipboard" />
+</header>
+
+<style>
+  header {
+    background: url("../assests/bg-header-mobile.png");
+    height: 320px;
+    padding-top: 122px;
+
+    @media (width >= 1024px) {
+      background: url("../assests/bg-header-desktop.png");
+      padding-top: 130px;
+    }
+  }
+
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+</style>

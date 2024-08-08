@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  borderColor: string;
+  icon: ImageMetadata;
+  gridAling?: string;
+}
+
+const { title, description, borderColor, icon, gridAling } = Astro.props;
+---
+
+<div
+  class={`p-7 border-t-4 rounded-md ${borderColor} ${gridAling} bg-white w-[316px] h-[228px] shadow-md lg:w-[350px] lg:h-[250px] lg:p-8`}
+>
+  <div class="relative">
+    <h2 class="text-xl font-semibold text-VeryDarkBlue mb-3">{title}</h2>
+    <p class="text-GrayishBlue font-extralight mb-[37px]">{description}</p>
+
+    <img class="absolute right-0" src={icon.src} alt="Icon" />
+  </div>
+</div>
