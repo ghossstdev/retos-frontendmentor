@@ -1,8 +1,5 @@
 import "./card-faq.css";
 import Accordion from "./Accordion";
-import illustrationMobile from "../assets/illustration-woman-online-mobile.svg";
-import illustrationDesktop from "../assets/illustration-woman-online-desktop.svg";
-import illustrationBox from "../assets/illustration-box-desktop.svg";
 import { accordionsData } from "../data";
 
 const CardFAQ = () => {
@@ -11,12 +8,12 @@ const CardFAQ = () => {
       <div className="card-faq__illustration">
         <img
           className="card-faq__illustration-box"
-          src={illustrationBox}
+          src='/assets/illustration-box-desktop.svg'
           alt="Illustration Box"
         />
         <picture>
-          <source media="(min-width: 1024px)" srcSet={illustrationDesktop} />
-          <img src={illustrationMobile} alt="Illustration Woman" />
+          <source media="(min-width: 1024px)" srcSet='/assets/illustration-woman-online-desktop.svg' />
+          <img src='/assets/illustration-woman-online-mobile.svg' alt="Illustration Woman" />
         </picture>
       </div>
       <div className="card-faq__details">

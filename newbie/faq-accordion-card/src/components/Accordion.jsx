@@ -1,5 +1,4 @@
 import "./accordion.css";
-import arrow from "../assets/icon-arrow-down.svg";
 import { useState } from "react";
 
 const Accordion = ({ title, description }) => {
@@ -15,7 +14,7 @@ const Accordion = ({ title, description }) => {
     <div className={`accordion ${accordionClass}`} onClick={openAcordion}>
       <div>
         <p className="accordion__title">{title}</p>
-        <img className="accordion__icon" src={arrow} alt="Icon Arrow" />
+        <img className="accordion__icon" src='/assets/icon-arrow-down.svg' alt="Icon Arrow" />
       </div>
 
       <p className="accordion__description">{description}</p>

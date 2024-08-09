@@ -1,6 +1,4 @@
 import "./App.css";
-import logo from "./assets/logo.svg";
-import illustrationDashboard from "./assets/illustration-dashboard.png";
 import { useRef, useState } from "react";
 
 function App() {
@@ -22,7 +20,7 @@ function App() {
 
   return (
     <main className="ping">
-      <img className="ping__logo" src={logo} alt="Logo Ping" />
+      <img className="ping__logo" src='/assets/logo.svg' alt="Logo Ping" />
 
       <h1 className="ping__title">
         We are launching <span className="ping__title-soon">soon!</span>
@@ -58,7 +56,7 @@ function App() {
 
       <img
         className="ping__dashboard"
-        src={illustrationDashboard}
+        src='/assets/illustration-dashboard.png'
         alt="Illustration Dashboard"
       />
 

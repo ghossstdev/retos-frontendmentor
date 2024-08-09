@@ -1,6 +1,4 @@
 import "../css/profile.css";
-import imageProfile from "../assets/avatar-michelle.jpg";
-import iconShare from "../assets/icon-share.svg";
 
 const Profile = ({ state, func }) => {
   return (
@@ -8,7 +6,7 @@ const Profile = ({ state, func }) => {
       <div>
         <img
           className="profile__image"
-          src={imageProfile}
+          src='/assets/avatar-michelle.jpg'
           alt="Avatar Michelle"
         />
         <div>
@@ -19,7 +17,7 @@ const Profile = ({ state, func }) => {
       <img
         onClick={() => func(!state)}
         className="profile__share"
-        src={iconShare}
+        src='/assets/icon-share.svg'
         alt="Icon Share"
       />
     </div>

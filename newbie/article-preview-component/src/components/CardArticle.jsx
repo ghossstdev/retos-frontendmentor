@@ -1,5 +1,4 @@
 import "../css/card-article.css";
-import illustrationDrawers from "../assets/drawers.jpg";
 import Profile from "./Profile";
 import Share from "./Share";
 import { useState } from "react";
@@ -12,7 +11,7 @@ const CardArticle = () => {
       <div className="card-article__illustration">
         <img
           className="card-article__illustration-image"
-          src={illustrationDrawers}
+          src='/assets/drawers.jpg'
           alt="Illustration Drawers"
         />
       </div>

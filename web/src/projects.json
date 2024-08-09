@@ -1,19 +1,124 @@
 [
     {
-        "title": "Project A",
-        "image": "/me.webp",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "demoUrl": "/",
-        "codeUrl": "/",
+        "title": "Article preview component",
+        "image": "/projects/newbie/article-preview-component.webp",
+        "description": "Frontend Mentor - Article preview component",
+        "demoUrl": "https://sensational-moonbeam-8c77e7.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/article-preview-component",
         "icons": [
             {
-                "name": "Tailwindcss",
-                "url": "/icons/tailwind.svg"
-            },
+                "name": "ReactJS",
+                "url": "/icons/react.svg"
+            }
+        ]
+    },
+    {
+        "title": "Base Apparel coming soon page",
+        "image": "/projects/newbie/base-apparel-coming-soon.webp",
+        "description": "Frontend Mentor - Base Apparel coming soon page",
+        "demoUrl": "https://lustrous-crumble-1dadc5.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/base-apparel-coming-soon",
+        "icons": []
+    },
+    {
+        "title": "FAQ accordion card",
+        "image": "/projects/newbie/faq-accordion-card.webp",
+        "description": "Frontend Mentor - FAQ accordion card",
+        "demoUrl": "https://starlit-arithmetic-541545.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/faq-accordion-card",
+        "icons": [
+            {
+                "name": "ReactJS",
+                "url": "/icons/react.svg"
+            }
+        ]
+    },
+    {
+        "title": "Four card feature section",
+        "image": "/projects/newbie/four-card-feature-section.webp",
+        "description": "Frontend Mentor - Four card feature section",
+        "demoUrl": "https://jazzy-biscotti-668835.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/four-card-feature-section",
+        "icons": [
             {
                 "name": "Astro",
                 "url": "/icons/astro.svg"
+            },
+            {
+                "name": "TailwindCSS",
+                "url": "/icons/tailwind.svg"
             }
         ]
+    },
+    {
+        "title": "Huddle landing page with single introductory section",
+        "image": "/projects/newbie/huddle-landing-page-with-single-introductory-section.webp",
+        "description": "Frontend Mentor - Huddle landing page with single introductory section",
+        "demoUrl": "https://jade-nasturtium-f05ea7.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/huddle-landing-page-with-single-introductory-section",
+        "icons": [
+            {
+                "name": "TailwindCSS",
+                "url": "/icons/tailwind.svg"
+            }
+        ]
+    },
+    {
+        "title": "Interactive rating component",
+        "image": "/projects/newbie/interactive-rating-component.webp",
+        "description": "Frontend Mentor - Interactive rating component",
+        "demoUrl": "https://tranquil-maamoul-b1d98b.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/interactive-rating-component",
+        "icons": [
+            {
+                "name": "ReactJS",
+                "url": "/icons/react.svg"
+            }
+        ]
+    },
+    {
+        "title": "Intro component with sign up form",
+        "image": "/projects/newbie/intro-component-with-sign-up-form.webp",
+        "description": "Frontend Mentor - Intro component with sign up form",
+        "demoUrl": "https://brilliant-frangollo-b318bc.netlify.app",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/intro-component-with-signup-form",
+        "icons": []
+    },
+    {
+        "title": "NFT preview card component",
+        "image": "/projects/newbie/nft-preview-card-component.webp",
+        "description": "Frontend Mentor - NFT preview card component",
+        "demoUrl": "https://ubiquitous-chaja-674346.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/nft-preview-card-component",
+        "icons": []
+    },
+    {
+        "title": "Order summary card",
+        "image": "/projects/newbie/order-summary-card.webp",
+        "description": "Frontend Mentor - Order summary card",
+        "demoUrl": "https://velvety-syrniki-3920c2.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/order-summary-component",
+        "icons": []
+    },
+    {
+        "title": "Ping coming soon page",
+        "image": "/projects/newbie/ping-coming-soon-page.webp",
+        "description": "Frontend Mentor - Ping coming soon page",
+        "demoUrl": "https://tourmaline-baklava-b3a212.netlify.app/",
+        "codeUrl": "https://github.com/jhuancz/retos-frontendmentor/tree/main/newbie/ping-coming-soon-page",
+        "icons": [
+            {
+                "name": "ReactJS",
+                "url": "/icons/react.svg"
+            }
+        ]
+    },
+    {
+        "title": "A",
+        "image": "/projects/newbie/base-apparel-coming-soon.webp",
+        "description": "Frontend Mentor - ",
+        "demoUrl": "/",
+        "codeUrl": "/",
+        "icons": []
     }
 ]

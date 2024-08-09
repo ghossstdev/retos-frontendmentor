@@ -1,7 +1,4 @@
 import "../css/share.css";
-import iconFacebook from "../assets/icon-facebook.svg";
-import iconTwitter from "../assets/icon-twitter.svg";
-import iconPinterest from "../assets/icon-pinterest.svg";
 import IconShare from "./IconShare";
 
 const Share = ({ state, func }) => {
@@ -13,11 +10,11 @@ const Share = ({ state, func }) => {
         <span className="share__title">Share</span>
 
         <div className="share__icons">
-          <img className="share__icon" src={iconFacebook} alt="Icon Facebook" />
-          <img className="share__icon" src={iconTwitter} alt="Icon Twitter" />
+          <img className="share__icon" src='/assets/icon-facebook.svg' alt="Icon Facebook" />
+          <img className="share__icon" src='/assets/icon-twitter.svg' alt="Icon Twitter" />
           <img
             className="share__icon"
-            src={iconPinterest}
+            src='/assets/icon-pinterest.svg'
             alt="Icon Pinterest"
           />
         </div>

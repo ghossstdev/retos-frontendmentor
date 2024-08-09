@@ -1,5 +1,4 @@
 import { useState } from "react";
-import star from "../assets/icon-star.svg";
 import "./card-interactive.css";
 import CardInteractiveThanks from "./CardInteractiveThanks";
 
@@ -16,7 +15,7 @@ const CardInteractive = () => {
   ) : (
     <article className="card-interactive">
       <div className="card-interactive__start">
-        <img src={star} alt="Star" />
+        <img src='/assets/icon-star.svg' alt="Star" />
       </div>
       <h1 className="card-interactive__title">How did we do?</h1>
       <p className="card-interactive__description">

@@ -1,4 +1,3 @@
-import imageThankYou from "../assets/illustration-thank-you.svg";
 import "./card-interactive-thank.css";
 
 const CardInteractiveThanks = ({ number }) => {
@@ -6,7 +5,7 @@ const CardInteractiveThanks = ({ number }) => {
     <article className="card-interactive-thanks">
       <img
         className="card-interactive-thanks__image"
-        src={imageThankYou}
+        src='/assets/illustration-thank-you.svg'
         alt="Image Thank You"
       />
       <div className="card-interactive-thanks__selected">
