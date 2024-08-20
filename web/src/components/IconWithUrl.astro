@@ -2,13 +2,15 @@
 interface Props {
     url: string
     name: string
+    loading?: "eager" | "lazy",
 }
 
-const { url, name } = Astro.props
+const { url, name, loading } = Astro.props
 ---
 
 <img
     class="w-5 h-5"
     src={url} 
     alt={`Icon ${name}`}
+    loading={loading}
 >
