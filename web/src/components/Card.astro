@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import IconWithUrl from "./IconWithUrl.astro";
 
 interface Props {
@@ -8,6 +9,7 @@ interface Props {
 		description: string;
 		demoUrl: string;
 		codeUrl: string;
+		loading: 'eager' | 'lazy';
 		icons: {
 			name: string;
 			url: string;
@@ -17,15 +19,16 @@ interface Props {
 
 const { project } = Astro.props;
 
-const { title, image, description, demoUrl, codeUrl, icons } = project;
+const { title, image, description, demoUrl, codeUrl, icons, loading } = project;
 ---
 
 <article class='rounded-lg border bg-card text-card-foreground shadow-sm'>
-	<img
+	<Image
 		src={image}
 		width='400'
 		height='225'
 		alt={title}
+		loading={loading}
 		class='rounded-t-lg object-cover w-full aspect-[16/9]'
 	/>
 	<div class='p-4 space-y-2'>
@@ -34,7 +37,7 @@ const { title, image, description, demoUrl, codeUrl, icons } = project;
 				icons.length !== 0 ? (
 					<div class='flex self-end gap-2 w-fit items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary-foreground text-secondary-foreground hover:bg-secondary-foreground/80 text-xs'>
 						{icons.map((icon) => (
-							<IconWithUrl name={icon.name} url={icon.url} />
+							<IconWithUrl name={icon.name} url={icon.url} loading={loading} />
 						))}
 					</div>
 				) : (
